@@ -402,7 +402,7 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 70%;
 }
-.skills-content .right .java::before{
+.skills-content .right .php::before{
     width: 40%;
 }
 
