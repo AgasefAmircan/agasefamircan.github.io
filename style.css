@@ -13,17 +13,17 @@ html{
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f8f6f6;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: rgb(34, 136, 231);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgb(6, 60, 236);
 }
 #whatsapp{
     position: fixed;
@@ -32,14 +32,14 @@ html{
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    background-color: crimson;
+    background-color: rgb(33, 194, 81);
     z-index: 1000;
     justify-content: center;
     align-items: center;
     transition: 1s;
 }
 #whatsapp i{
-    color: black;
+    color: #fff;
     font-size: 20px;
 }
 .fab, .far{
@@ -72,7 +72,7 @@ section{
     justify-content: space-between;
 }
 section .title{
-
+    position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -92,7 +92,7 @@ section .title::before{
 }
 section .title::after{
     position: absolute;
-    bottom: -8px; 
+    bottom: -8px;
     left: 50%;
     font-size: 20px;
     color: crimson;
@@ -288,28 +288,56 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
-    color:#fff;
-    background: #111;
+
+.services{
+    background-color: #111;
 }
-.services .title::before,
+ .services .title{
+     color: #fff;
+ }
+.services .title::before
+{
+    background: #fff;
+}
+.services .title::after
+{
+    background: #111;
+    content: "what i provide";
+}
+.services .serv-content{
+    text-align: center;
+}
 
-.services .title::after,
-
+.services .card{
+    background-color: aqua;
+}
 .services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
+    margin-left: 38%;
+    margin-right: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    background: #333;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.services .serv-content .card .box{
+    text-align: center;
+}
+.services .text ,.services p{
+    color: #fff;
+}
 .services .serv-content .card:hover{
     background: rgb(22, 95, 204);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
+   
 }
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
@@ -374,7 +402,7 @@ section .title::after{
     font-size: 18px;
 }
 .skills .skills-content .right .line{
-    height: 5px;
+    height: 10px;
     width: 100%;
     background: lightgrey;
     position: relative;
@@ -391,23 +419,83 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
     width: 70%;
 }
-.skills-content .right .php::before{
+.skills-content .right .js::before{
+    width: 60%;
+}
+.skills-content .right .boot4::before{
+    width: 70%;
+}
+.skills-content .right .jquery::before{
+    width: 50%;
+}
+.skills-content .right .java::before{
     width: 40%;
 }
 
-
-
+/* teams section styling */
+/* .teams .title::after{
+    content: "who with me";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: crimson;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+} */
 
 /* contact section styling */
 .contact .title::after{
@@ -646,4 +734,6 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
-}
+}    line-height: 38px;
+    
+
